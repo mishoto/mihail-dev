@@ -120,16 +120,6 @@ p {
   }
 }
 /*  global classes */
-main{
-  height: 150%;
-}
-
-/* section */
-section {
-  width: 90vw;
-  margin: 0 auto;
-  max-width: var(--max-width);
-}
 
 @media screen and (min-width: 992px) {
   .section {
@@ -137,133 +127,32 @@ section {
   }
 }
 
-/*
-=============== 
-Navbar
-===============
-*/
-nav {
-  background: var(--clr-white);
-  box-shadow: var(--light-shadow);
-}
-.nav-logo {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  
-}
-.nav-toggle {
-  font-size: 1.5rem;
-  color: var(--clr-primary-5);
-  background: transparent;
-  border-color: transparent;
-  transition: var(--transition);
-  cursor: pointer;
-}
-.nav-toggle:hover {
-  color: var(--clr-primary-1);
-  transform: rotate(90deg);
-}
-.logo {
-  margin-left: 5rem;
-}
-.links {
-  color: var(--clr-grey-3);
-  font-size: 1.4rem;
-  text-transform: capitalize;
-  letter-spacing: var(--spacing);
-  display: block;
-  padding: 0.5rem 1rem;
-  margin: 1rem;
-  transition: var(--transition);
-}
-.links a:hover {
-  background: var(--clr-primary-8);
-  color: var(--clr-primary-5);
-  padding-left: 1.5rem;
+main {
+  height: 150%;
 }
 
-.active {
-  color: var(--clr-primary-5);
-}
-.social-icons {
-  display: none;
-}
-.links-container {
-  height: 0;
-
-  overflow: hidden;
-  transition: var(--transition);
-}
-.show-container {
-  height: 10rem;
-}
-@media screen and (min-width: 800px) {
-  .nav-center {
-    max-width: 1170px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0.3rem;
-  }
-  .nav-logo {
-    margin-left: 0rem;
-  }
-  .nav-toggle {
-    display: none;
-  }
-  .links-container {
-    height: auto !important;
-  }
-  .links {
-    display: flex;
-    padding: 0.5rem 1rem;
-  }
-  .links a {
-    padding: 0;
-    margin: 0 1rem;
-  }
-  .links a:hover {
-    padding: 0;
-    background: transparent;
-  }
-  .active {
-  color: var(--clr-primary-5);
-}
-  .social-icons {
-    display: flex;
-    font-size: 1.5rem;
-  }
-  .social-icons li {
-    padding-top: 0.5rem;
-    margin: 0 0.5rem;
-  }
-  .social-icons a {
-    color: var(--clr-primary-5);
-    transition: var(--transition);
-  }
-  .social-icons a:hover {
-    color: var(--clr-primary-7);
-  }
+section {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: var(--max-width);
 }
 
-.hero{
+.hero {
   z-index: 10px;
   height: 60vh;
   background-color: #777;
 }
-.skills{
+.skills {
   z-index: 10px;
   height: 10vh;
   background-color: #999;
 }
-.projects{
+.projects {
   z-index: 10px;
   height: 80vh;
   background-color: #778387;
 }
-.contact{
+.contact {
   z-index: 10px;
   height: 30vh;
   background-color: #888;

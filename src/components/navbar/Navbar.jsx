@@ -1,45 +1,46 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
-import { links, social } from '../utils/navbarData';
+import { links, social } from '../../utils/navbarData';
 import { FaBars } from 'react-icons/fa';
-import logo from '../images/logo.svg';
+import logo from '../../images/logo.svg';
+import styles from './Navbar.module.css'
 
 const Navbar = () => {
   const [showLinks, setShowLinks] = useState(false);
   const linksContainerRef = useRef(null);
   const linksRef = useRef(null);
 
-  // useEffect(() => {
-  //   const linksHeight = linksRef.current.getBoundingClientRect().height;
-  //   if (showLinks) {
-  //     linksContainerRef.current.style.height = `${linksHeight}px`;
-  //   } else {
-  //     linksContainerRef.current.style.height = '10px';
-  //   }
-  // }, [showLinks]);
+  useEffect(() => {
+    const linksHeight = linksRef.current.getBoundingClientRect().height;
+    if (showLinks) {
+      linksContainerRef.current.style.height = `${linksHeight}px`;
+    } else {
+      linksContainerRef.current.style.height = '10px';
+    }
+  }, [showLinks]);
 
   return (
-    <nav>
-      <div className='nav-center'>
-        <div className='nav-logo'>
+    <nav className={styles.navbar}>
+      <div className={styles.nav_center}>
+        <div className={styles.nav_logo}>
           <NavLink to='/'>
             <img src={logo} alt='logo' />
           </NavLink>
           <button
-            className='nav-toggle'
+            className={styles.nav_toggle}
             onClick={() => setShowLinks(!showLinks)}>
             <FaBars />
           </button>
         </div>
-        <div className='links-container' ref={linksContainerRef}>
-          <ul className='links' ref={linksRef}>
+        <div className={styles.links_container} ref={linksContainerRef}>
+          <ul className={styles.links} ref={linksRef}>
             {links.map((link) => {
               return (
                 <li key={link.id}>
                   <NavLink
                     to={link.url}
                     className={({ isActive }) =>
-                      isActive ? 'links active' : 'link'
+                      isActive ? `${styles.links} ${styles.active}` : `${styles.links}`
                     }>
                     {link.text}
                   </NavLink>
@@ -48,12 +49,14 @@ const Navbar = () => {
             })}
           </ul>
         </div>
-        <ul className='social-icons'>
+        <ul className={styles.social_icons}>
           {social.map((social) => {
             const { id, url, icon } = social;
             return (
-              <li key={id}>
-                <a href={url}>{icon}</a>
+              <li className={styles.social_icons_li} key={id}>
+                <a className={styles.social_icons_a} href={url}>
+                  {icon}
+                </a>
               </li>
             );
           })}
