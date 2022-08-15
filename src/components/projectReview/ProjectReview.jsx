@@ -30,14 +30,7 @@ const ProjectReview = () => {
       return checkNumber(newIndex);
     });
   };
-  const randomPerson = () => {
-    let randomNumber = Math.floor(Math.random() * projects.length);
-    if (randomNumber === index) {
-      randomNumber = index + 1;
-    }
-    setIndex(checkNumber(randomNumber));
-  };
-
+  
   return (
     <article className={style.review}>
       <div className={style.img_container}>
@@ -58,7 +51,7 @@ const ProjectReview = () => {
             <GoMarkGithub />
           </a>
         </button>
-        <button className={style.random_btn} onClick={randomPerson}>
+        <button className={style.random_btn}>
           live demo
         </button>
         <button className={style.next_btn} onClick={nextProject}>

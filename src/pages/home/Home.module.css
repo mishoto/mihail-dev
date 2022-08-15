@@ -1,0 +1,19 @@
+.hero {
+  height: 85vh;
+  background-color: #777;
+}
+.skills {
+  
+  height: 10vh;
+  background-color: #999;
+}
+.projects {
+  
+  height: 70vh;
+  background-color: #778387;
+}
+.contact {
+  
+  height: 30vh;
+  background-color: #888;
+}

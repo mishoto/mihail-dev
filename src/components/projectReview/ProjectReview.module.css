@@ -39,8 +39,8 @@
   margin-bottom: 0.55rem;
 }
 .techs {
+  margin-top: 1rem;
   margin-bottom: 0.55rem;
-
   text-transform: uppercase;
   color: var(--clr-primary-5);
   font-size: 1rem;
@@ -54,7 +54,7 @@
   font-size: 1.8rem;
   background: transparent;
   border-color: transparent;
-  margin: 1 1rem;
+  margin: 1.5 1rem;
 
   transition: var(--transition);
   cursor: pointer;
@@ -68,6 +68,7 @@
   color: var(--clr-primary-5);
   margin: 0 1rem;
   padding: 0.5rem 1.5rem;
+  margin-top: 1.1rem;
   text-transform: capitalize;
   border-radius: var(--radius);
   transition: var(--transition);
