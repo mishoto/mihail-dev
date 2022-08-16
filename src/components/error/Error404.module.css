@@ -1,0 +1,9 @@
+.h2 {
+  margin-top: 10rem;
+  padding-top: 1.5rem;
+  font-size: 4.5rem;
+  color: var(--clr-red-dark)
+}
+.h3 {
+  font-size: 3rem;
+}

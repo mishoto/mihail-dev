@@ -1,0 +1,9 @@
+.error_section{
+  width: 100vw;
+  min-height: 20vh;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius);
+  background-color: var(--clr-primary-3)
+}
