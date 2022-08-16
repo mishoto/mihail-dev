@@ -41,7 +41,7 @@ Variables
   --radius: 0.25rem;
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  --max-width: 1170px;
+  --max-width: 1250px;
   --fixed-width: 620px;
 }
 /*
@@ -127,33 +127,9 @@ p {
   }
 }
 
-main {
-  height: 150%;
-}
-
 section {
-  width: 90vw;
+  width: 100vw;
   margin: 0 auto;
   max-width: var(--max-width);
 }
 
-.hero {
-  z-index: 10px;
-  height: 60vh;
-  background-color: #777;
-}
-.skills {
-  z-index: 10px;
-  height: 10vh;
-  background-color: #999;
-}
-.projects {
-  z-index: 10px;
-  height: 80vh;
-  background-color: #778387;
-}
-.contact {
-  z-index: 10px;
-  height: 30vh;
-  background-color: #888;
-}
