@@ -1,12 +1,17 @@
-import React from 'react'
-import skillIcons from './skillsIcons'
+import React, { useState } from 'react';
+import skillsIcons from './skillsIcons.js';
+import style from './Skills.module.css';
 
 const Skills = () => {
-  return (
-    <card>
-      skills
-      </card>
-  )
-}
+  const icons = skillsIcons.map((item) => {
+    return (
+      <ul key={item.id} >
+        <li className={style.icons}>{item.icon}</li>
+      </ul>
+    );
+  });
 
-export default Skills
+  return <article className={style.icons_conteiner}>{icons}</article>;
+};
+
+export default Skills;

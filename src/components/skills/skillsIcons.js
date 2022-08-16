@@ -1,3 +1,4 @@
+import React from 'react';
 import {
   FaJava,
   FaJs,
@@ -15,8 +16,7 @@ import {
   SiPostgresql,
 } from 'react-icons/si';
 
-
-const skillIcons = [
+const skillsIcons = [
   {
     id: 1,
     icon: <FaJava />,
@@ -67,4 +67,4 @@ const skillIcons = [
   },
 ];
 
-export default skillIcons;
+export default skillsIcons;

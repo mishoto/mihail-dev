@@ -1,0 +1,33 @@
+.icons_conteiner {
+  display: grid;
+  padding-top: 0.6vh;
+
+  margin-left: 6vw;
+  width: 100%;
+  grid-template-columns: auto auto auto auto auto auto;
+}
+
+.icons {
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 412px) {
+  .icons_conteiner {
+    padding-top: 0.9vh;
+    margin-left: 5.4vw;
+  }
+  .icons {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .icons {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .icons {
+    font-size: 2rem;
+  }
+}
