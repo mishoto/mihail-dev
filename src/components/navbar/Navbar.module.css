@@ -103,8 +103,4 @@
   .social_icons_a:hover {
     color: var(--clr-primary-7);
   }
-
-  .test_p{
-    color: purple;
-  }
 }

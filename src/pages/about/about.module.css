@@ -1,5 +1,6 @@
 
 .resume_container{
+  display: flex;
   position: relative;
   margin: 0 auto;
 }
@@ -13,7 +14,7 @@
 
 .btn_download {
   position: absolute;
-  right: 23vw;
+  right: 5rem;
   background: var(--clr-primary-10);
   color: var(--clr-primary-5);
   margin: 0 1rem;
@@ -31,6 +32,6 @@
 }
 
 .icon{
-  font-size: 1.5rem;
+  font-size: 1.5em;
   color: var(--clr-dark-light);
 }
