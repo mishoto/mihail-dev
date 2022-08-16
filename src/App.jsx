@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { Navbar } from './components/components';
+import { ContactContainer } from './components/components';
 import { Home, About, Projects, Error } from './pages/pages';
 
 import './index.css';
@@ -15,6 +15,7 @@ const App = () => (
           <Route index element={<Home />} />
           <Route path='about' element={<About />} />
           <Route path='projects' element={<Projects />} />
+          <Route path='contact' element={'#contact'} />
         </Route>
         <Route path='*' element={<Error />} />
       </Routes>
