@@ -1,0 +1,36 @@
+
+.resume_container{
+  position: relative;
+  margin: 0 auto;
+}
+
+
+.resume {
+  position: absolute;
+  top: 1vh;
+  left: 18.5vw;
+}
+
+.btn_download {
+  position: absolute;
+  right: 23vw;
+  background: var(--clr-primary-10);
+  color: var(--clr-primary-5);
+  margin: 0 1rem;
+  padding: 0.2rem 2rem;
+  top: 4rem;
+  text-transform: capitalize;
+  border-radius: var(--radius);
+  transition: var(--transition);
+  border-color: transparent;
+  cursor: pointer;
+}
+.btn_download:hover {
+  background: var(--clr-primary-5);
+  color: var(--clr-primary-1);
+}
+
+.icon{
+  font-size: 1.5rem;
+  color: var(--clr-dark-light);
+}

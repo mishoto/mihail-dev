@@ -1,0 +1,19 @@
+
+.resume_img {
+  width: 70%;
+}
+
+.btn_download {
+  display: block;
+  position: absolute;
+  bottom: space(4);
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(89.77deg, #2e6e96 0.1%, #3785b6 99.9%);
+  padding: space(1.5) space(3);
+  border-radius: 100px;
+  color: $color--light-gray;
+  transition: 0.1s ease-in-out;
+}
+
+
