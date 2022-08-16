@@ -1,0 +1,22 @@
+.form_container {
+  margin: 0 auto;
+  width: 100%;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+  border-radius: 10px;
+  height: 400px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.form_content_left {
+  
+  border-radius: 10px;
+  position: relative;
+}
+
+.form_content_right {
+  border-radius: 10px;
+  position: relative;
+  
+}
