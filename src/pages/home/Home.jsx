@@ -1,5 +1,6 @@
 import React from 'react'
 import ProjectReview from '../../components/projectReview/ProjectReview';
+import Skills from '../../components/skills/Skills';
 import style from './Home.module.css'
 
 const Home = () => {
@@ -9,7 +10,7 @@ const Home = () => {
         <p>hero section</p>
       </section>
       <section className={style.skills}>
-        <p>skills section</p>
+        <Skills/>
       </section>
       <section className={style.projects}>
         <ProjectReview/>
