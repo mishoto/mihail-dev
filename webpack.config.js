@@ -63,6 +63,11 @@ module.exports = {
         ],
         include: /\.module\.css$/,
       },
+      {
+        test: /\.pdf$/,
+        // type: 'asset/resource',
+        use: ['file-loader'],
+      },
     ],
   },
 
